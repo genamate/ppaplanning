@@ -1,0 +1,10 @@
+/* Enter your custom styles here */
+.sapUiFormCL.sapUiFormBackgrSolid, .sapUiFormCL.sapUiFormBackgrTranslucent {
+    background-color: #fffffff2;
+}
+.durashineBG {
+    background-image: url(../image/durashine.png);
+    background-color: #FFF; 
+  background-position: bottom right;; 
+  background-repeat: no-repeat; 
+}

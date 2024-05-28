@@ -1,0 +1,120 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:l="sap.ui.layout"
+	xmlns:m="sap.m"
+    xmlns:core="sap.ui.core"
+	controllerName="tbspl.ppaplanning.controller.Form1"
+	height="100%">
+	<ObjectPageLayout showFooter="true" id="ObjectPageLayout" preserveHeaderStateOnScroll="true" upperCaseAnchorBar="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<heading>
+                        <m:FlexBox fitContainer="true" alignItems="Center">
+							<m:Avatar displaySize="S" showBorder="true" displayShape="Circle"
+							src="sap-icon://end-user-experience-monitoring" class="sapUiTinyMarginEnd"/>
+							<m:VBox >
+                                <m:Title text="PPA Planning for Q2 2024" />
+                                <m:ObjectStatus
+                                    text="East Region"
+                                    inverted="true"
+                                    state="Indication15" />
+                            </m:VBox>
+                            
+						</m:FlexBox>
+				</heading>
+
+
+				<!-- <actions>
+					<m:Button text="Edit" type="Emphasized"/>
+					<m:Button type="Transparent" text="Delete"/>
+					<m:Button type="Transparent" text="Copy"/>
+					<m:OverflowToolbarButton icon="sap-icon://action" type="Transparent" text="Share" tooltip="action"/>
+				</actions> -->
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+		<headerContent>
+			<m:FlexBox wrap="Wrap" fitContainer="true">
+				<l:VerticalLayout class="sapUiSmallMarginEnd">
+                    <m:Title text="Durashine"/>
+					<m:ObjectStatus title="Carry Forward CC" text="₹ 0.00"/>
+					<m:ObjectStatus title="Carry Forward SS" text="₹ 0.00"/>
+				</l:VerticalLayout>
+
+                <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Title text=""/>
+					<m:ObjectStatus title="Expected Earning CC" text="₹ 0.00"/>
+					<m:ObjectStatus title="Expected Earning bare" text="₹ 0.00"/>
+                    <m:ObjectStatus title="Total Quarterly Expected Earning CC" text="₹ 0.00"/>
+                    <m:ObjectStatus title="Total Quarterly Expected Earning SS" text="₹ 0.00"/>
+				</l:VerticalLayout>
+
+                <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Title text="Infinia"/>
+					<m:ObjectStatus title="Carry Forward CC" text="₹ 0.00"/>
+					<m:ObjectStatus title="Carry Forward SS" text="₹ 0.00"/>
+				</l:VerticalLayout>
+
+                <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Title text=""/>
+					<m:ObjectStatus title="Expected Earning bare" text="₹ 0.00"/>
+					<m:ObjectStatus title="Expected Earning SS" text="₹ 0.00"/>
+                    <m:ObjectStatus title="Total Quarterly Expected Earning CC" text="₹ 0.00"/>
+                    <m:ObjectStatus title="Total Quarterly Expected Earning bare " text="₹ 0.00"/>
+				</l:VerticalLayout>
+
+				<!-- <l:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+					<m:ObjectStatus text="In Stock" state="Error" class="sapUiMediumMarginEnd"/>
+					<m:ObjectStatus title="Label" text="In Stock" state="Warning"/>
+				</l:HorizontalLayout> -->
+			</m:FlexBox>
+		</headerContent>
+
+		<sections>
+			<ObjectPageSection titleUppercase="false" title="T1">
+				<subSections>
+                    <ObjectPageSubSection title="Durashine" titleUppercase="false">
+						<blocks>
+							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T1_Durashine" type="XML"/>
+						</blocks>
+					</ObjectPageSubSection>
+
+					<ObjectPageSubSection title="Infinia" titleUppercase="false">
+						<blocks>
+							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T1_Infinia" type="XML"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" title="T2">
+				<subSections>
+					<ObjectPageSubSection title="Above the Line" titleUppercase="false">
+						<blocks>
+							<m:Text text="ATL"></m:Text>
+						</blocks>
+					</ObjectPageSubSection>
+                    <ObjectPageSubSection title="Below the Line" titleUppercase="false">
+						<blocks>
+							<m:Text text="BTL"></m:Text>
+						</blocks>
+					</ObjectPageSubSection>
+                    <ObjectPageSubSection title="Through The Line" titleUppercase="false">
+						<blocks>
+							<m:Text text="TTL"></m:Text>
+						</blocks>
+					</ObjectPageSubSection>
+					
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+        <footer>
+			<m:OverflowToolbar>
+				<m:ToolbarSpacer/>
+				<m:Button text="Save as Draft"/>
+                <m:Button type="Accept" text="Submit"/>
+				<m:Button type="Reject" text="Cancel"/>
+			</m:OverflowToolbar>
+		</footer>
+	</ObjectPageLayout>
+</mvc:View>

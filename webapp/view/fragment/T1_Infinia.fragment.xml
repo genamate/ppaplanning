@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+		<f:SimpleForm
+			editable="true"
+			layout="ColumnLayout" >
+			<f:content>
+				<Label text="ABP sales CC" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="50%"/>
+				<Label text="ABP sales Bare" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="50%"/>
+                <Label text="Expected D2D sales CC" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="50%"/>
+				<Label text="Expected D2D sales Bare" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="50%"/>
+				<!-- <Label text="." />
+				<Input /> -->
+				<Label text="Expected PPA expenses CC" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="50%"/>
+                <Label text="Expected PPA expenses Bare" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="50%"/>
+				<Label text="TBSPL To Pay PPA expenses CC" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="50%"/>
+				<Label text="TBSPL To Pay PPA expenses Bare" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="50%"/>
+				<Label text="Earnings left CC" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="50%"/>
+				<Label text="Earnings left Bare" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="50%"/>
+				<Label text="Actusl D2D sales CC" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="50%"/>
+				<Label text="Actual D2D sales Bare" />
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="50%"/>
+			</f:content>
+		</f:SimpleForm>
+</core:FragmentDefinition>
