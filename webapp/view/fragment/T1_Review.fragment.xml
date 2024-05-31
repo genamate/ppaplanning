@@ -1,0 +1,73 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+ 
+        <f:SimpleForm
+            columnsM="3"
+			columnsL="4"
+			columnsXL="6"
+			editable="false"
+			layout="ColumnLayout" >
+			<f:content>
+                <core:Title text="Durashine" />
+				<Label text="ABP sales CC" />
+				<Text text="0.00 MT" />
+				<Label text="ABP sales SS" />
+				<Text text="0.00 MT" />
+                <Label text="Expected D2D sales CC" />
+				<Text text="0.00 MT" />
+				<Label text="Expected D2D sales SS" />
+				<Text text="0.00 MT" />
+                <!-- <Label text="." />
+				<Input /> -->
+				<Label text="Expected PPA expenses CC" />
+				<Text text="₹ 0.00" />
+                <Label text="Expected PPA expenses SS" />
+				<Text text="₹ 0.00" />
+				<Label text="TBSPL To Pay PPA expenses CC" />
+				<Text text="₹ 0.00" />
+				<Label text="TBSPL To Pay PPA expenses Bare" />
+				<Text text="₹ 0.00" />
+				<Label text="Earnings left CC" />
+				<Text text="₹ 0.00" />
+				<Label text="Earnings left SS" />
+				<Text text="₹ 0.00" />
+				<Label text="Actusl D2D sales CC" />
+				<Text text="0.00 MT" />
+				<Label text="Actual D2D sales SS" />
+				<Text text="0.00 MT" />
+
+							
+                <core:Title text="Infinia" />
+				<Label text="ABP sales CC" />
+				<Text text="0.00 MT" />
+				<Label text="ABP sales Bare" />
+				<Text text="0.00 MT" />
+                <Label text="Expected D2D sales CC" />
+				<Text text="0.00 MT" />
+				<Label text="Expected D2D sales Bare" />
+				<Text text="0.00 MT" />
+				<!-- <Label text="." />
+				<Input /> -->
+				<Label text="Expected PPA expenses CC" />
+				<Text text="₹ 0.00" />
+                <Label text="Expected PPA expenses Bare" />
+				<Text text="₹ 0.00" />
+				<Label text="TBSPL To Pay PPA expenses CC" />
+				<Text text="₹ 0.00" />
+				<Label text="TBSPL To Pay PPA expenses Bare" />
+				<Text text="₹ 0.00" />
+				<Label text="Earnings left CC" />
+				<Text text="₹ 0.00" />
+				<Label text="Earnings left Bare" />
+				<Text text="₹ 0.00" />
+				<Label text="Actusl D2D sales CC" />
+				<Text text="0.00 MT" />
+				<Label text="Actual D2D sales Bare" />
+				<Text text="0.00 MT" />
+			</f:content>
+		</f:SimpleForm>
+
+</core:FragmentDefinition>

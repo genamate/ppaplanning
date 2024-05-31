@@ -10,10 +10,10 @@
 			<ObjectPageDynamicHeaderTitle>
 				<heading>
                         <m:FlexBox fitContainer="true" alignItems="Center">
-							<m:Avatar displaySize="S" showBorder="true" displayShape="Circle"
-							src="sap-icon://end-user-experience-monitoring" class="sapUiTinyMarginEnd"/>
+							<m:Avatar displaySize="S" showBorder="false" displayShape="Circle"
+							src="sap-icon://batch-payments" class="sapUiTinyMarginEnd"/>
 							<m:VBox >
-                                <m:Title text="PPA Planning for Q2 2024" />
+                                <m:Title text="PPA Planning for Q3 2024" />
                                 <m:ObjectStatus
                                     text="East Region"
                                     inverted="true"
@@ -71,7 +71,7 @@
 		</headerContent>
 
 		<sections>
-			<ObjectPageSection titleUppercase="false" title="T1">
+			<ObjectPageSection titleUppercase="false" title="T1" visible="true" id="EditSection_T1">
 				<subSections>
                     <ObjectPageSubSection title="Durashine" titleUppercase="false">
 						<blocks>
@@ -87,7 +87,7 @@
 				</subSections>
 			</ObjectPageSection>
 
-			<ObjectPageSection titleUppercase="false" title="T2">
+			<ObjectPageSection titleUppercase="false" title="T2" visible="true" id="EditSection_T2">
 				<subSections>
 					<ObjectPageSubSection title="Above the Line" titleUppercase="false">
 						<blocks>
@@ -107,12 +107,29 @@
 					
 				</subSections>
 			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" title="Review" visible="false" id="ReviewSection">
+				<subSections>
+					<ObjectPageSubSection title="" titleUppercase="false">
+						<blocks>
+							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T1_Review" type="XML"/>
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="" titleUppercase="false">
+						<blocks>
+							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T2_Review" type="XML"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
 		</sections>
         <footer>
 			<m:OverflowToolbar>
+				<m:Button type="Back" text="Edit" visible="false" id="EditButton" press="onEdit"/>
 				<m:ToolbarSpacer/>
 				<m:Button text="Save as Draft"/>
-                <m:Button type="Accept" text="Submit"/>
+				<m:Button type="Emphasized" visible="true" text="Review" press="onReview" id="ReviewButton"/>
+                <m:Button type="Accept" text="Submit" visible="false" id="SubmitButton"/>
 				<m:Button type="Reject" text="Cancel"/>
 			</m:OverflowToolbar>
 		</footer>

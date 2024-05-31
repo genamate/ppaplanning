@@ -8,3 +8,7 @@
   background-position: bottom right;; 
   background-repeat: no-repeat; 
 }
+
+.sapUxAPObjectPageContainerNoBar>.sapUxAPObjectPageSection:first-child:not(.sapUxAPObjectPageSectionNoTitle) {
+  margin-top: 0rem !important;
+}
