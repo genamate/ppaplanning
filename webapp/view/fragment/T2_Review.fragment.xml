@@ -13,10 +13,13 @@
 				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="August" /></Column>
 				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="September" /></Column>
 				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="Plan Total" /></Column>
-				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="Measure" /></Column>
-				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="3.5rem"><Text text="Urban" /></Column>
-				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="5.2rem"><Text text="Semiurban" /></Column>
-				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="3.5rem"><Text text="Rural" /></Column>
+				<!-- <Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="Measure" /></Column> -->
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" ><Text text="Urban" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" ><Text text="Semiurban" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" ><Text text="Rural" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" ><Text text="No. Of Actvities" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" ><Text text="No Target Cities" /></Column>
+				
 				<Column minScreenWidth="Tablet" demandPopin="true"><Text text="Details" /></Column>
 			</columns>
 			<items>
@@ -27,10 +30,12 @@
                         <Text text="{MarketingActivity>M2}" />
                         <Text text="{MarketingActivity>M3}" />
 						<Text text="{MarketingActivity>M3}" />
-                        <Text text="{MarketingActivity>Measure}" />
-						<core:Icon src="sap-icon://sys-enter" color="green"></core:Icon>
-						<core:Icon src="sap-icon://sys-enter" color="green" visible="false"></core:Icon>
-						<core:Icon src="sap-icon://sys-enter" color="green"></core:Icon>
+                        <!-- <Text text="{MarketingActivity>Measure}" /> -->
+						<Text text="{MarketingActivity>M3}" />
+						<Text text="{MarketingActivity>M3}" />
+						<Text text="{MarketingActivity>M3}" />
+						<Text text="12" />
+						<Text text="5" />
 						<Text />
 					</cells>
 				</ColumnListItem>

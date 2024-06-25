@@ -84,6 +84,13 @@
           "target": [
             "TargetForm1"
           ]
+        },
+        {
+          "name": "RouteForm2",
+          "pattern": "/Actuals/:?query:",
+          "target": [
+            "TargetForm2"
+          ]
         }
       ],
       "targets": {
@@ -93,6 +100,13 @@
           "clearControlAggregation": false,
           "viewId": "Form1",
           "viewName": "Form1"
+        },
+        "TargetForm2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Form2",
+          "viewName": "Form2"
         }
       }
     },

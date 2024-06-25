@@ -12,31 +12,31 @@
 			layout="ColumnLayout" >
 			<f:content>
 				<Label text="ABP sales CC" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="40%"/>
 				<Label text="ABP sales SS" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="40%"/>
                 <Label text="Expected D2D sales CC" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="40%"/>
 				<Label text="Expected D2D sales SS" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="40%"/>
                 <!-- <Label text="." />
 				<Input /> -->
 				<Label text="Expected PPA expenses CC" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="40%"/>
                 <Label text="Expected PPA expenses SS" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="40%"/>
 				<Label text="TBSPL To Pay PPA expenses CC" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="40%"/>
 				<Label text="TBSPL To Pay PPA expenses Bare" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="40%"/>
 				<Label text="Earnings left CC" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="40%"/>
 				<Label text="Earnings left SS" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="INR" fieldWidth="40%"/>
 				<Label text="Actusl D2D sales CC" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="40%"/>
 				<Label text="Actual D2D sales SS" />
-				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="75%"/>
+				<Input placeholder="0.00" type="Number" textAlign="End" description="MT" fieldWidth="40%"/>
 
 			</f:content>
 		</f:SimpleForm>

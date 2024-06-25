@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm=".handleGroupDialogConfirm"
+		reset=".resetGroupDialog">
+		<groupItems>
+			<ViewSettingsItem text="Distributor" key="Name" selected="true" />
+			<ViewSettingsItem text="Region" key="SupplierName" />
+			<ViewSettingsItem text="KAM" key="WeightMeasure" />
+			<ViewSettingsItem text="RSM" key="Price" />
+            <ViewSettingsItem text="Status" key="Price" />
+            <ViewSettingsItem text="Quarter" key="Price" />
+		</groupItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

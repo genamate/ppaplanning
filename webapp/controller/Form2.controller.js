@@ -9,7 +9,7 @@ sap.ui.define([
     function (Controller, Device, JSONModel, Filter, Sorter, Fragment) {
         "use strict";
 
-        return Controller.extend("tbspl.ppaplanning.controller.Form1", {
+        return Controller.extend("tbspl.ppaplanning.controller.Form2", {
             onInit: function () {
                 this._mViewSettingsDialogs = {};
                 var aData = [

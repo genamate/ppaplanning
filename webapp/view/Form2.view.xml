@@ -13,7 +13,7 @@
 							<m:Avatar displaySize="S" showBorder="false" displayShape="Circle"
 							src="sap-icon://batch-payments" class="sapUiTinyMarginEnd"/>
 							<m:VBox >
-                                <m:Title text="PPA Planning for Q3 2024" />
+                                <m:Title text="PPA Actuals for Q3 2024" />
                                 <m:ObjectStatus
                                     text="East Region"
                                     inverted="true"
@@ -35,33 +35,16 @@
 
 		<headerContent>
 			<m:FlexBox wrap="Wrap" fitContainer="true">
-				<l:VerticalLayout class="sapUiSmallMarginEnd">
-                    <m:Title text="Durashine"/>
-					<m:ObjectStatus title="Carry Forward CC" text="₹ 0.00"/>
-					<m:ObjectStatus title="Carry Forward SS" text="₹ 0.00"/>
-				</l:VerticalLayout>
+				
 
                 <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
                     <m:Title text=""/>
-					<m:ObjectStatus title="Expected Earning CC" text="₹ 0.00"/>
-					<m:ObjectStatus title="Expected Earning bare" text="₹ 0.00"/>
-                    <m:ObjectStatus title="Total Quarterly Expected Earning CC" text="₹ 0.00"/>
-                    <m:ObjectStatus title="Total Quarterly Expected Earning SS" text="₹ 0.00"/>
+					<m:ObjectStatus title="Expected Distributor Earning" text="₹ 0.00"/>
+					<m:ObjectStatus title="Expected Central Earning" text="₹ 0.00"/>
+                    <!-- <m:ObjectStatus title="Total Quarterly Expected Earning CC" text="₹ 0.00"/> -->
+                    <!-- <m:ObjectStatus title="Total Quarterly Expected Earning SS" text="₹ 0.00"/> -->
 				</l:VerticalLayout>
 
-                <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
-                    <m:Title text="Infinia"/>
-					<m:ObjectStatus title="Carry Forward CC" text="₹ 0.00"/>
-					<m:ObjectStatus title="Carry Forward SS" text="₹ 0.00"/>
-				</l:VerticalLayout>
-
-                <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
-                    <m:Title text=""/>
-					<m:ObjectStatus title="Expected Earning bare" text="₹ 0.00"/>
-					<m:ObjectStatus title="Expected Earning SS" text="₹ 0.00"/>
-                    <m:ObjectStatus title="Total Quarterly Expected Earning CC" text="₹ 0.00"/>
-                    <m:ObjectStatus title="Total Quarterly Expected Earning bare " text="₹ 0.00"/>
-				</l:VerticalLayout>
 
 				<!-- <l:HorizontalLayout class="sapUiSmallMarginBeginEnd">
 					<m:ObjectStatus text="In Stock" state="Error" class="sapUiMediumMarginEnd"/>
@@ -71,27 +54,12 @@
 		</headerContent>
 
 		<sections>
-			<ObjectPageSection titleUppercase="false" title="T1" showTitle="false" visible="true" id="EditSection_T1">
-				<subSections>
-                    <ObjectPageSubSection title="Durashine" titleUppercase="false">
-						<blocks>
-							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T1_Durashine" type="XML"/>
-						</blocks>
-					</ObjectPageSubSection>
-
-					<ObjectPageSubSection title="Infinia" titleUppercase="false">
-						<blocks>
-							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T1_Infinia" type="XML"/>
-						</blocks>
-					</ObjectPageSubSection>
-				</subSections>
-			</ObjectPageSection>
 
 			<ObjectPageSection titleUppercase="false" title="T2" showTitle="false" visible="true" id="EditSection_T2">
 				<subSections>
 					<ObjectPageSubSection title="Above the Line" showTitle="false" titleUppercase="false">
 						<blocks>
-							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T2" type="XML"/>
+							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.Form2_T2" type="XML"/>
 						</blocks>
 					</ObjectPageSubSection>
                     <ObjectPageSubSection title="Below the Line" showTitle="false" titleUppercase="false">
@@ -108,20 +76,7 @@
 				</subSections>
 			</ObjectPageSection>
 
-			<ObjectPageSection titleUppercase="false" title="Review" visible="false" id="ReviewSection">
-				<subSections>
-					<ObjectPageSubSection title="" titleUppercase="false">
-						<blocks>
-							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T1_Review" type="XML"/>
-						</blocks>
-					</ObjectPageSubSection>
-					<ObjectPageSubSection title="" titleUppercase="false">
-						<blocks>
-							<core:Fragment fragmentName="tbspl.ppaplanning.view.fragment.T2_Review" type="XML"/>
-						</blocks>
-					</ObjectPageSubSection>
-				</subSections>
-			</ObjectPageSection>
+
 		</sections>
         <footer>
 			<m:OverflowToolbar>

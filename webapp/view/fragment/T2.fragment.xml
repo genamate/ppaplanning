@@ -1,0 +1,75 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+
+
+        <Table  headerText=""
+			items="{path: 'MarketingActivity>/', filters: [{
+				path: 'Type',
+				operator: 'EQ',
+				value1: 'ATL'
+			}]}" sticky="ColumnHeaders,HeaderToolbar">
+			<headerToolbar>
+				<OverflowToolbar>
+					<Title text="Above the Line" />
+					<ToolbarSeparator />
+					<SearchField width="25%"></SearchField>
+					<ToolbarSpacer/>
+					<Button
+						tooltip="Sort"
+						icon="sap-icon://sort"
+						press="handleSortButtonPressed"/>
+					<Button
+						tooltip="Filter"
+						icon="sap-icon://filter"
+						press="handleFilterButtonPressed"/>
+					<!-- <Button
+						tooltip="Group"
+						icon="sap-icon://group-2"
+						press="handleGroupButtonPressed"/> -->
+					<ToggleButton icon="sap-icon://menu" tooltip="Enable Custom Context Menu" press="onToggleTableSection" />
+				</OverflowToolbar>
+			</headerToolbar>
+			<columns>
+				<Column ><Text text="Activity" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="July" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="August" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="September" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="Plan Total" /></Column>
+				<!-- <Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="Measure" /></Column> -->
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="Urban" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="Semiurban" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="Rural" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="No. Of Actvities" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End" width="6rem"><Text text="No Target Cities" /></Column>
+				<Column minScreenWidth="Tablet" demandPopin="true" width="8rem"><Text text="Comments" /></Column>
+			</columns>
+			<items>
+				<ColumnListItem vAlign="Middle">
+					<cells>
+						<VBox >
+							<ObjectIdentifier title="{MarketingActivity>ActivityName}" ></ObjectIdentifier>
+							<HBox>
+								<Text wrapping="true" class="sapUiTinyMarginTop" text="{MarketingActivity>remarks}: "/>
+								<Input width="4rem" class="sapUiTinyMarginBegin"></Input>
+							</HBox>
+						</VBox>
+                        <Input  />
+                        <Input  />
+                        <Input  />
+						<ObjectNumber number="{MarketingActivity>M3}" />
+                        <!-- <Input  /> -->
+						<Input />
+						<Input />
+						<Input />
+						<Input />
+						<Input />
+						<TextArea rows="2" />
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+   
+</core:FragmentDefinition>
